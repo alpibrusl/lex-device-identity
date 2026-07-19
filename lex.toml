@@ -1,0 +1,10 @@
+[package]
+name        = "lex-device-identity"
+version     = "0.1.0"
+description = "Platform-signed device certificates + offline signed-reading verification. The single home for the ed25519-over-sha256-hex envelope that lets a tamper-evident trail start at the device: the platform issues certs, any ingest service verifies signed readings against them."
+
+# Pure crypto core — only ed25519 (lex-crypto) and json_value (lex-schema). Both
+# public, so consumers need no private-dep token.
+[dependencies]
+lex-schema = { git = "https://github.com/alpibrusl/lex-schema" }
+lex-crypto = { git = "https://github.com/alpibrusl/lex-crypto" }
