@@ -42,3 +42,9 @@ lex check src/device_identity.lex
 lex test --allow-effects io,crypto,random tests/
 lex fmt --check src/ tests/
 ```
+
+## License
+
+Copyright (c) 2026 lex-device-identity contributors.
+
+Licensed under the [EUPL-1.2](LICENSE) — the European Union Public Licence, as used across the `lex-*` ecosystem.
